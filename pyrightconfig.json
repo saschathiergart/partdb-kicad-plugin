@@ -1,0 +1,4 @@
+// pyrightconfig.json
+{
+  "reportMissingTypeStubs": false
+}

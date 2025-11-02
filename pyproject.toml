@@ -1,0 +1,26 @@
+[project]
+name = "kicad-plugin"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "==3.9.13"
+dependencies = []
+license = {text = "GPL-3.0"}
+
+
+[build-system]
+requires = ["hatchling", "hatch-kicad"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.kicad-package]
+name = "PartDB ActionPlugin"
+description = "Sync storage location"
+description_full = "Sync storage location"
+identifier = "com.github.saschathiergart.partdb-kicad-plugin"
+author = {name = "Sascha Thiergart"}
+status = "development"
+kicad_version = "9.0.5"
+icon = "resources/icon.png"
+
+[tool.pyright]
+reportMissingTypeStubs = false
