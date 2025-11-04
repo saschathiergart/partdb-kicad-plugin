@@ -1,12 +1,3 @@
-Here's best practice for working with a plugin project like yours, using both uv and hatch/hatch-kicad:
-
-# Installation
-
-## Prerequisites 
-- The environment is managed with uv (`uv sync`) to set up `.venv` and install dependencies.
-- Building the KiCad package with hatch/hatch-kicad requires *activating* the appropriate Python environment, as hatch/hatch-kicad will otherwise not find the compatible interpreter
-
-
 # Installation
 
 - The environment is managed with uv (`uv sync`) to set up `.venv` and install dependencies.
