@@ -1,7 +1,7 @@
 [project]
-name = "kicad-plugin"
+name = "partdb-kicad-plugin"
 version = "0.1.0"
-description = "Add your description here"
+description = "Kicad plugins to connect PartDB"
 readme = "README.md"
 requires-python = "==3.9.13"
 dependencies = []
@@ -11,6 +11,16 @@ license = {text = "GPL-3.0"}
 [build-system]
 requires = ["hatchling", "hatch-kicad"]
 build-backend = "hatchling.build"
+
+[tool.hatch.build]
+include = [
+    "plugin.py",
+    "kicad_advanced",
+    "partdb",
+    "resources",
+    "__init__.py",
+    "icon.png"
+]
 
 [tool.hatch.build.targets.kicad-package]
 name = "PartDB ActionPlugin"
